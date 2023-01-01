@@ -1,118 +1,238 @@
-*{
-    font-family:Roboto,Arial,Verdana,sans-serif;;
+* {
+    font-family: Roboto, Arial, Verdana, sans-serif;
+    box-sizing: border-box;
+    white-space: nowrap;
+    color: #24242A;
+}
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: #24242A;
-    white-space: nowrap;
-}
-body{
-    background-color: #f7f9fa;
-}
-li,a{
-    font-weight: bolder;
     font-size: 16px;
+    width: 100%;
+    background-color: #f7f5f3;
+}
+
+/* Nav bar styles*/
+li,
+a,
+button {
+    font-weight: 700;
+    font-size: 1rem;
     text-decoration: none;
     list-style: none;
 }
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* Mise en place du menu */
-.menu-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    width: 100%;
-    z-index: 1;
-}
-.menu-bar>a{
-    font-weight: bolder;
-    color: #0058a9;
-}
-.nav__link{
-    /*width: 800px;*/
-    display: flex;
-    justify-content: space-around;
-}
-.nav__link li>a{
-    border-right: 1px solid #24242A;
-    padding:0 20px  0 ;
-}
-.sub-menu{
-    position: relative;
-}
-.sub-menu-1{
-    position: absolute;
-    right: 0;
-    top: 0px;
-    padding-top:30px;
-    display: none;
-    text-align: right;
-    background-color: #FFF;
+
+#tv5monde {
+    font-size: 1.26923076923077em;
+    color: #00abe9;
+    margin-left: .71428571428571em;
+    margin-right: .71428571428571em;
+    text-indent: -10000px;
+    display: block;
+    width: 112px;
+    height: 39px;
+    background: url(../image/logo-tv5monde.svg) no-repeat center center / contain;
 }
 
-.nav__link li:hover .sub-menu-1 {
+#tv5monde-plus {
+    font-size: 1.1428em;
+    background: url(../image/logo-tv5monde-plus.svg) no-repeat center center / contain;
+    width: 95px;
+    text-indent: -10000px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 39px;
     display: inline-block;
-    color: #fff;
-}
-.sub-menu-1 li{
-    padding: 10px 10px 30px  20px;
-}
-.sub-menu-1 li a{
-    border:none;
-    padding: 5px 10px 20px;
-}
-.sub-menu-1 li:hover,
-.sub-menu-1 li a:hover{
-    background-color: #0058a9;
-    color: #fff;
-}
-/* Grille*/
-
-.image-grid{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #f7f9fa;
-}
-.image-grid>img{
-    width:100%;
-    height:100%;
-}
-.image-grid-col-2{
-    grid-column: span 2;
+    vertical-align: middle;
 }
 
-.image-grid-row-2{
-    grid-row: span 2;
+button {
+    border: none;
+    background-color: transparent;
 }
 
- /* overlay */
- .overlay-box {
-    position: relative;
- }
-.overlay{
-    position: absolute;
-    background-color: rgba(0, 0, 0, .4);
-    color: #fff;
-    width: 100%;
-    height: 50%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: all 1s ease;
+button span {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+    border-top: .35714285714286em solid currentColor;
+    border-left: .35714285714286em solid transparent;
+    border-right: .35714285714286em solid transparent;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    cursor: pointer;
 }
 
-.overlay-box:hover .overlay {
-    height: 100%;
+nav>ul>li:hover span {
+    right: 24px;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.tv5monde-metanav-icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -.15em;
+    fill: currentColor;
     overflow: hidden;
 }
 
+.nav-contenair {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1170px;
+    height: 61px;
+    z-index: 1000;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+/* Sub menu display disign*/
+nav>ul>li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+}
+
+.menu-bar>li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    padding: 20px 0 0 0;
+    z-index: 10000;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.submenu>li:hover {
+    background-color: #0b5af0;
+}
+
+.submenu>li:hover a {
+    color: #fff;
+}
+
+.submenu li {
+    padding: 20px 30px;
+    text-align: right;
+}
+
+i {
+    color: #a3a3a3;
+    font-size: .85714285714286em;
+    text-transform: uppercase;
+    font-style: italic;
+    display: block;
+    margin-top: .83333333333333em;
+}
+
+/* Grille des image avec diplay gid*/
+.img_grid {
+    width: 100%;
+}
+
+.image-bloc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    width: 1600px;
+    height: 600px;
+    margin: auto;
+}
+
+.image-bloc>img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-bloc-col-2 {
+    grid-column: span 2;
+}
+
+.image-bloc-row-2 {
+    grid-row: span 2;
+}
+
+/* Information section*/
+.info {
+    width: 1263px;
+    margin: auto;
+}
+
+.rubrique,.rubrique>ul{
+    display: flex;
+    width: 1263px;
+    overflow: hidden;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.rubrique>ul>li{
+    border-right: rgba(52, 52, 58, .3) 1px solid;
+    padding: 10px;
+}
+.rubrique>ul>li a {
+    color: #0270bc;
+}
+
+h3 {
+    color: #fa6834;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 15px;
+    background-color: #eceae9;
+    line-height: 48px;
+    vertical-align: top;
+}
+
+.rubrique>h3:nth-child(1)::after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-color: transparent;
+    border-left-width: medium;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left-color: #eceae9;
+    border-width: 24px;
+    margin-top: -24px;
+}
+.info-list{   
+    display: flex;
+    width: 1263px;
+    margin: auto;
+    padding: 50px 0  10px 0;
+    justify-content: space-between;
+}

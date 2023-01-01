@@ -3,91 +3,193 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>TV5MONDE:TV international fraconphone</title>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Emmanuel-Document</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="menu-bar">
-            <a href="#">TV5 <span>MONDE</span></a>
-            <ul class="nav__link">
-                <li><a href="#">TV5MONDE PLUS</a></li>
-                <li><a href="#">TV</a>
-                    <div class="sub-menu">
-                        <ul class="sub-menu-1">
-                            <a href="#"><li>Vos rendez-vous</li></a>
-                            <a href="#"><li>Guide des programmes</li></a>
-                            <a href="#"><li>Revoir (Replay)</li></a>
-                            <a href="#"><li>Emissions</li></a>
-                            <a href="#"><li>Reption TV</li></a>
-                            <a href="#"><li>Direct TV</li></a>
+    <div class="contenair">
+        <div class="nav-contenair">
+            <nav>
+                <a href="#" id="tv5monde">TV5MONDE</a>
+                <ul class="menu-bar">
+                    <li>
+                        <a href="#" id="tv5monde-plus">TV5MONDE Plus</a>
+                    </li>
+                    <li>
+                        <button type="button">
+                            TV <span classe="fl-animate"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Vos rendez-vous</a>
+                            </li>
+                            <li>
+                                <a href="#">Guide des programmes</a>
+                            </li>
+                            <li>
+                                <a href="#">Revoir (replay)</a>
+                            </li>
+                            <li>
+                                <a href="#">Emissions</a>
+                            </li>
+                            <li>
+                                <a href="#">Réception TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Direct TV</a>
+                            </li>
                         </ul>
-                    </div>
-                </li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Langue français</a></li>
-                <li><a href="#">Afrique</a></li>
-                <li><a href="#">Plus</a>
-                    <div class="sub-menu">
-                        <ul class="sub-menu-1">
-                            <a href="#"><li>Voyage</li></a>
-                            <a href="#"><li>Tivimondeplus</li></a>
-                            <a href="#"><li>Nos application mobiles</li></a>
-                            <a href="#"><li>Flux RSS et widgets</li></a>
-                            <a href="#"><li>Nous suivre sur les reseau sociaux</li></a>
-                            <a href="#"><li>Marchés publics</li></a>
+                    </li>
+                    <li>
+                        <a href="#">Info</a>
+                    </li>
+                    <li>
+                        <a href="#">Langue fançaise</a>
+                    </li>
+                    <li>
+                        <a href="#">Afrique</a>
+                    </li>
+                    <li>
+                        <button type="button">
+                            Plus <span classe="fl-animate"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li>
+                                <a href="">Et aussi …</a>
+                            </li>
+                            <li>
+                                <a href="#">Voyage</a>
+                            </li>
+                            <li>
+                                <a href="#">Tivi5mondeplus</a>
+                            </li>
+                            <li>
+                                <a href="#">Nos applications mobiles</a>
+                            </li>
+                            <li>
+                                <a href="#">Flux RSS et widgets</a>
+                            </li>
+                            <li>
+                                <a href="#">Nous suivre sur les réseaux sociaux</a>
+                            </li>
+                            <li>
+                                <a href="#">Marchés publics</a>
+                            </li>
                         </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <section class="image-grid">
-            <div class="overlay-box image-grid-col-2 image-grid-row-2">
-                <img class="image-grid-col-2 image-grid-row-2" src="img/1.jpg" alt="image jpg">
-                <div class="overlay">
-                    <p> </p>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <svg aria-hidden="true" class="tv5monde-metanav-icon">
+                                <use xlink:href="#symbol-earth">
+                                    <symbol id="symbol-earth" viewBox="0 0 72 72">
+                                        <path
+                                            d="M36,1C16.7,1,1,16.7,1,36s15.7,35,35,35s35-15.7,35-35S55.3,1,36,1z M26.7,7.8c-1.4,1-2.2,3-3.4,3.4
+                                            c-1.3,0.5-2.3-0.3-3.5-0.1C21.9,9.8,24.2,8.6,26.7,7.8z M36,65.7C19.6,65.7,6.3,52.4,6.3,36c0-9.8,4.7-18.4,12-23.8
+                                            c-0.8,1-1.8,2.6-1.6,2.8c0.5,0.8,2.2,0.4,2.6,0c0.4-0.4,2.6-1.3,3.5-1.3s3.5,1.6,4.8,1.3c2.3-0.5,2.1-2.1,3-2.6
+                                            c0.7-0.4,1.9,0,3.3-0.6s0.8-3.6-0.3-4.4c-0.7-0.5-2.2-0.6-3.6-0.4c1.9-0.4,4-0.6,6-0.6c5.9,0,11.5,1.8,16.1,4.8
+                                            c-0.6,1.9-4.4,0.2-6.9,1.8c-2.6,1.7-2.6,4.9-3.7,5.7c-3.8,2.7-10.5,3.3-12,3.9c-1.3,0.5-3.2,1.3-3.1,3.1c0.1,1.7,1.2,3,3,2.8
+                                            c1.8-0.2,4.2-1.8,5.7-1.8s2.5,2.3,3.4,2.9c0.8,0.6,3.1,0.5,3.4,1.8s-0.2,3.9-2.2,3.9s-6-3.6-7.2-4c-1.2-0.4-2.5,0.4-3.3-0.1
+                                            s-2.3-2-3.7-1.8c-1.8,0.3-2.5,1.9-3.3,2.6c-0.9,0.7-3.3,1.3-3.7,2.7c-0.6,1.9-0.5,6.6,0.4,8.5c1.1,2.5,8,4.4,9,6.1
+                                            c0.8,1.3-0.6,3.1,0.5,4.6s1.7,1.5,2.2,2.1c1,1.3-0.3,3.3,1.2,4.4c2.8,2.1,8.9,0.6,9.9-2.2c0.4-1.2-0.3-3.1,0-4.8
+                                            c0.2-1.2,1.7-2.8,2.1-3.7c0.4-0.8,0-3.6,0.9-4.7c0.8-1.1,3.5-1.4,4.1-1.7c0.5-0.3,0.5-1.7,1-1.9c0.5-0.3,2,0.3,2.5,0
+                                            c0.5-0.3,0.7-1.4,1.1-2.2s2.7-1.6,2.7-2.9c0-3.2-5.7-2.6-5.8-4c-0.1-1.6,1.4-2.6,3.3-2.8c1.4-0.1,3.9,1.1,4.2,2
+                                            c0.5,1.3-0.4,1.6,0.7,2.9c1.2,1.4,3.5,1.6,4.1,2.6c0.4,0.7-0.4,1.5,0.4,2.6c0.3,0.4,1.3,1.1,2.4,1.3C62.9,55,50.7,65.7,36,65.7z">
+                                        </path>
+                                    </symbol>
+                                </use>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">
+                                    TV5MONDE Amérique Latine
+                                    <br><i>FR, EN, ES</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    TV5MONDE Asie/Pacifique
+                                    <br><i>FR, EN</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    TV5MONDE Etats-Unis
+                                    <br><i>EN</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    TV5MONDE Europe
+                                    <br><i>FR, EN, NL, DE, RO</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    TV5MONDE Maghreb-Orient
+                                    <br><i>FR, EN, AR</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <section class="img_grid">
+                <div class="image-bloc">
+                    <img class="image-bloc-col-2 image-bloc-row-2" src="image/1.jpg" alt="image jpg">
+                    <img src="image/2.jpg" alt="image jpg">
+                    <img src="image/3.jpg" alt="image jpg">
+                    <img src="image/4.jpg" alt="image jpg">
+                    <img src="image/5.jpg" alt="image jpg">
                 </div>
+            </section>
+        </div>
+        <div class="info">
+            <h2>Information</h2>
+            <div class="rubrique">
+                <h3>En ce moment :</h3>
+                <ul>
+                    <li><a href="#" target="_self">Ukraine-Russie : la guerre</a></li>
+                    <li><a href="#" target="_self">Avortement aux États-Unis</a></li>
+                    <li><a href="#" target="_self">Droit à l'avortement</a></li>
+                    <li><a href="#" target="_self">France : élection présidentielle 2022</a></li>
+                    <li><a href="#" target="_self">Vaccination contre le Covid-19</a></li>
+                </ul>
             </div>
-            <div class="overlay-box">
-                <img src="img/2.jpg" alt="image jpg">
-                <div class="overlay">
-                    <p>
-                   </p>
-                </div>
-            </div>
-            <div class="overlay-box">
-                <img src="img/3.jpg" alt="image jpg">
-                <div class="overlay">
-                    <p>
-                   </p>
-                </div>
-            </div>
-            <div class="overlay-box">
-                <img src="img/4.jpg" alt="image jpg">
-                <div class="overlay">
-                    <p>
-                   </p>
-                </div>
-            </div>
-            <div class="overlay-box">
-                <img src="img/5.jpg" alt="image jpg">
-                <div class="overlay">
-                    <p>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </header>
+        </div>
+        <div class="info-list">
 
-    <main>
-        <article>
-            Article
-        </article>
-    </main>
-    <footer>
-        footer
-    </footer>
+            <div class="actuality">
+                <img src="image/9.jpg" alt="image jpg">
+                <div class="wrapper-info-une">
+                    <p>DIRECT - Guerre en Ukraine : l'Europe se prépare au risque d'une
+                        crise énergétique
+                    </p>
+                    <div class="info-datepub">26 aoû 2022</div>
+                </div>
+            </div>
+            <div class="actuality">
+                <img src="image/10.jpg" alt="image jpg">
+                <div class="wrapper-info-une">
+                    <p>Sahara occidental : le Maroc rappelle son ambassadeur à Tunis pour
+                        “consultation”</p>
+                    <div class="info-datepub">26 aoû 2022</div>
+                </div>
+            </div>
+            <div class="actuality">
+                <img src="image/11.jpg" alt="image jpg">
+                <div class="wrapper-info-une">
+                    <p>Colonisation et guerre d'Algérie : Emmanuel Macron récuse toute
+                        "repentance"
+                    </p>
+                    <div class="info-datepub">26 aoû 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
