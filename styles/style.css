@@ -231,8 +231,18 @@ h3 {
 }
 .info-list{   
     display: flex;
+    justify-content: center;
     width: 1263px;
-    margin: auto;
     padding: 50px 0  10px 0;
     justify-content: space-between;
+    margin: auto;
+}
+.actuality{
+    margin: 20px;
+    border: solid 3px rgb(243, 27, 27);
+}
+.actuality img{
+    height: 100%;
+    width: 100%;
+    
 }
